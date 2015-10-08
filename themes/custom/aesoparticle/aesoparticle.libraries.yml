@@ -1,0 +1,8 @@
+global-styling:
+  version: 1.x
+  css:
+    theme:
+      css/aesop1.css: {}
+      css/aesop2.css: {}
+      css/aesop3.css: {}
+      css/aesop4.css: {}

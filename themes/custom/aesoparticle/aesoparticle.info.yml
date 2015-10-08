@@ -1,0 +1,7 @@
+name: Aesoparticle
+type: theme
+description: 'Theme for AESOP Article page.'
+package: Custom
+core: 8.x
+libraries:
+  - aesoparticle/global-styling
