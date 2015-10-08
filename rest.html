@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="http://localhost/fabulist/core/assets/vendor/jquery/jquery.min.js?v=2.1.4"></script>
+    </head>
+    <body>
+        <div>TODO write content</div>
+
+
+
+        <script type="text/javascript">
+
+            $(window).load('http://localhost/fabulist/fablist/json/1', function (responseTxt, statusTxt, xhr) {
+                if (statusTxt == "success") {
+                    var ht_ml = '<ul>';
+                    console.log(responseTxt);
+                    $.each(responseTxt, function (key, value) {
+                        alert(key + ": " + value);
+                    });
+                    var ht_ml = ht_ml + '</ul>';
+                    alert("External content loaded successfully!");
+                }
+
+                if (statusTxt == "error")
+                    alert("Error: " + xhr.status + ": " + xhr.statusText);
+            });
+        </script>
+    </body>
+
+
+</html>
